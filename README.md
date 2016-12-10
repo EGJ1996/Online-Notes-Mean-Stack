@@ -1,5 +1,5 @@
 Online Notes
-A website that converts audio lectures to text using the IBM Watson API. It then formats and summarizes the text notes using python natural language processing module ntkp. 
+A website that converts audio lectures to text using the IBM Watson API. It then formats and summarizes the text notes using python natural language processing module ntkp. It uses MongoDb for the database, Node.js and Express for the backend and Angular2 for the front end.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
