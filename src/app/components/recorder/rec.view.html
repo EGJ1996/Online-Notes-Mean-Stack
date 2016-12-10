@@ -1,0 +1,22 @@
+ <form class="form-horizontal">
+  <fieldset>
+    <legend>Add Note To Course</legend>
+    <div class="form-group">
+      <div class="col-lg-10">
+        <label for ="title" class="col-lg-2 control-label">Course</label>
+        <input type="text" [(ngModel)]="title" name="title" id="title" />
+        <span class="help-block">Enter a course for the audio note</span>
+        <label for="textArea" class="col-lg-2 control-label">Description</label>
+        <textarea class="form-control" rows="3" id="textArea" [(ngModel)]="desc" name="desc"></textarea>
+        <span class="help-block">Enter a description for the photo</span>
+        <input type="file" class="form-control" (change)="changeListner($event)" style="width:25%"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button class="btn btn-primary" (click)="getTxt()">Convert To Text</button> 
+        <button type="reset" class="btn btn-default">Cancel</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
